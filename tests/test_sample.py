@@ -1,6 +1,9 @@
 # tests/test_sample.py
 import sys
-print("PYTHONPATH:", sys.path)
+import os
+# Добавление папки src в sys.path:
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
+
 import numpy as np
 import pytest
 
