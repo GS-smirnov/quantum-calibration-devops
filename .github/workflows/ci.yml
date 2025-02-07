@@ -33,7 +33,7 @@ jobs:
         
       - name: Build Docker image
         run: |
-          docker build -t yourdockerhubusername/quantum-calibration:latest ./docker
+          docker build -f docker/Dockerfile -t gordey2024/quantum-calibration:latest .
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
