@@ -28,6 +28,9 @@ jobs:
       - name: Run tests
         run: pytest --maxfail=1 --disable-warnings -q
 
+      - name: List root directory
+        run: ls -l
+        
       - name: Build Docker image
         run: |
           docker build -t yourdockerhubusername/quantum-calibration:latest ./docker
