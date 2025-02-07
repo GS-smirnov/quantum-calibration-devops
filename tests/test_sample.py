@@ -31,4 +31,3 @@ def test_create_and_train_model_returns_model_and_history():
     # Проверка, что возвращается объект модели и история обучения не пустая
     assert model is not None
     assert history.history['loss'], "История обучения должна содержать значение ошибки"
-
