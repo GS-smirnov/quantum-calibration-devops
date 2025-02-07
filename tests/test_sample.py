@@ -1,5 +1,6 @@
 # tests/test_sample.py
-
+import sys
+print("PYTHONPATH:", sys.path)
 import numpy as np
 import pytest
 
