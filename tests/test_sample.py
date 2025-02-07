@@ -1,8 +1,12 @@
-# tests/test_sample.py
 import sys
 import os
-# Добавление папки src в sys.path:
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
+
+# Определить корневую директорию проекта (один уровень выше папки tests)
+repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+if repo_root not in sys.path:
+    sys.path.insert(0, repo_root)
+
+print("repo_root:", repo_root)
 
 import numpy as np
 import pytest
