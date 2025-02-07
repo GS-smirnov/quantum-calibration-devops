@@ -10,7 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      PYTHONPATH: ${{ github.workspace }}/src
+      PYTHONPATH: ${{ github.workspace }}/quantum-calibration-devops
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
