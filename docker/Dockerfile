@@ -12,5 +12,6 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 # Копирование исходного кода
 COPY . .
 
+
 # Команда для запуска приложения (измените под нужный скрипт)
 CMD ["python", "src/main.py"]
